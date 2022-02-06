@@ -50,28 +50,23 @@
         </ul>
         <section class="catalog-main-filtres">
           <h2 class="catalog-main-filtres">Фильтры</h2>
-          <div class="catalog-main-filtres-color">
-             <h3>Цвета</h3>
-            <form class="catalog-main-filtres-color">
+            <form class="catalog-main-filtres">
+              <div class="catalog-main-filtres-color">
+                <span>Цвета</span>
               <label>Черный<input class="catalog-main-filtres-color-item" type="checkbox" checked> </label>
               <label>Белый<input class="catalog-main-filtres-color-item" type="checkbox" checked> </label>
               <label>Синий<input class="catalog-main-filtres-color-item" type="checkbox" > </label>
               <label>Красный<input class="catalog-main-filtres-color-item" type="checkbox" > </label>
               <label>Розовый<input class="catalog-main-filtres-color-item" type="checkbox" > </label>
-            </form>
-          </div>
-          <div class="catalog-main-filtres-bluetooth">
-            <h3>Bluetoth</h3>
-            <form class="catalog-main-filtres-bluetooth">
+              </div>
+              <div class="catalog-main-filtres-bluetooth"> <span>Bluetoorh</span>
               <label class="catalog-main-filtres-bluetooth-item"> Есть
-                 <input class="catalog-main-filtres-bluetooth-item" type="radio" checked></label>
+                 <input class="catalog-main-filtres-bluetooth-item" type="radio" checked name="radio"></label>
                  <label class="catalog-main-filtres-bluetooth-item"> Нет
-                  <input class="catalog-main-filtres-bluetooth-item" type="radio" ></label>
+                  <input class="catalog-main-filtres-bluetooth-item" type="radio" name="radio"></label>
+                 </div>
+           <input class="catalog-main-filtres" type="button" value="Показать">
             </form>
-          </div>
-          <span class="catalog-main-filtres">
-            <a href="#">Показать</a>
-          </span>
         </section>
         <section class="catalog-main-products">
           <h2 class="vissually-hidden"> Наши товары</h2>
@@ -106,7 +101,7 @@
               </dl> </a>
             </li>
           </ul>
-          <button type="submit">Загрузить еще</button>
+          <button type="button">Загрузить еще</button>
           <ul class="pagination">
             <li class="pagination-item"><a href="">Назад</a></li>
             <li class="pagination-item"><a href="#">1</a></li>
@@ -119,12 +114,11 @@
         </section>
       </main>
       <footer class="catalog-footer">
-        <img src="#" alt="logo">
+        <a class="catalog-footer-logo" href="index.html"><img src="#" alt="logo"></a>
         <address class="catalog-footer-adress">
           Санкт-Петербург, набережная <br>
           реки Карповки,5, литера П.
         </address>
-        <img src="#" alt="Желтая полоска">
         <ul class="catalog-footer">
           <li class="catalog-footer-delivery"><a href="#">Доставка</a></li>
           <li class="catalog-footer-guarantee"><a href="#">Гарантия</a></li>

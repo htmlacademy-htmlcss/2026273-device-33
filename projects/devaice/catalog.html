@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>catalog.html</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="catalog-header">
@@ -37,32 +38,36 @@
         </nav>
       </header>
       <main class="catalog-main">
-        <h1 class="catalog-main">Моноподы для селфи</h1>
+        <h1 class="catalog-main-title">Моноподы для селфи</h1>
         <ul class="catalog-main-links">
           <li class="catlog-main-links-item"><a class="catalog-main-links" href="index.html">Главная</a></li>
           <li class="catlog-main-links-item"><a class="catalog-main-links" href="#">Каталог товаров </a> </li>
           <li class="catlog-main-links-item"><a class="catalog-main-links" href="#">Моноподоы для селфи</a></li>
         </ul>
         <section class="catalog-main-filtres">
-          <h2 class="catalog-main-filtres">Фильтры</h2>
+          <h2 class="catalog-main-filtres-title">Фильтр</h2>
             <form class="catalog-main-filtres">
               <div class="catalog-main-filtres-color">
-                <span>Цвета</span>
+                <span class="catalog-main-filtres-color-title">Цвет</span>
               <label>Черный<input class="catalog-main-filtres-color-item" type="checkbox" checked> </label>
               <label>Белый<input class="catalog-main-filtres-color-item" type="checkbox" checked> </label>
               <label>Синий<input class="catalog-main-filtres-color-item" type="checkbox" > </label>
               <label>Красный<input class="catalog-main-filtres-color-item" type="checkbox" > </label>
               <label>Розовый<input class="catalog-main-filtres-color-item" type="checkbox" > </label>
               </div>
-              <div class="catalog-main-filtres-bluetooth"> <span>Bluetoorh</span>
+              <div class="catalog-main-filtres-bluetooth"> <span class="catalog-main-filtres-bluetooth-title">Bluetooth</span>
               <label class="catalog-main-filtres-bluetooth-item"> Есть
                  <input class="catalog-main-filtres-bluetooth-item" type="radio" checked name="radio"></label>
                  <label class="catalog-main-filtres-bluetooth-item"> Нет
                   <input class="catalog-main-filtres-bluetooth-item" type="radio" name="radio"></label>
                  </div>
-           <input class="catalog-main-filtres" type="button" value="Показать">
+           <input class="catalog-main-filtres-input" type="button" value="Показать">
             </form>
         </section>
+        <span class="catalog-main-sorting">Сортировка</span>
+        <select class="catalog-main-sorting-select">
+        <option class="catalog-main-sorting-select-item"> Популярные</option>
+        </select>
         <section class="catalog-main-products">
           <h2 class="vissually-hidden"> Наши товары</h2>
           <ul class="catalog-main-products">
@@ -70,41 +75,41 @@
               <a href="#"><img src="images/monopod-for-noob.jpg" alt="Селфи палка черная обычная" width="360" height="380">
               <dl>
                 <dt>Любительская селфи палка
-                  <dd>500 р</dd>
+                  <dd class="main-catalog-products-item-price">500 р</dd>
                 </dt>
               </dl> </a>
             </li><li class="catalog-main-products-item">
               <a href="#"><img src="images/monopod-for-profi.jpg" alt="Селфи палка черная красивая" width="360" height="380">
               <dl>
                 <dt> Профессиональная селфи-палка
-                  <dd>1500 р</dd>
+                  <dd class="main-catalog-products-item-price">1500 р</dd>
                 </dt>
               </dl></a>
             </li><li class="catalog-main-products-item">
               <a href="#"><img src="images/monopod-for-water.jpg" alt="Селфи палка желтая не тонущая" width="360" height="380">
               <dl>
                 <dt>Непотопляемая селфи-палка
-                  <dd>2500 р</dd>
+                  <dd class="main-catalog-products-item-price">2500 р</dd>
                 </dt>
               </dl> </a>
             </li><li class="catalog-main-products-item">
               <a href="#"><img src="images/monopod-hand.jpg" alt="Селфи палка в виде руки" width="360" height="380">
               <dl>
                 <dt>Селфи-палка следуй за мной
-                  <dd>1500 р</dd>
+                  <dd class="main-catalog-products-item-price">1500 р</dd>
                 </dt>
               </dl> </a>
             </li>
           </ul>
-          <button type="button">Загрузить еще</button>
+          <button type="button" class="pagination-button">Загрузить еще</button>
           <ul class="pagination">
-            <li class="pagination-item"><a href="">Назад</a></li>
+            <li class="pagination-item-ago"><a href="">Назад</a></li>
             <li class="pagination-item"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><span>...</span></li>
             <li class="pagination-item"><a href="#">15</a></li>
-            <li class="pagination-item"><a href="#">Вперед</a></li>
+            <li class="pagination-item-forward"><a href="#">Вперед</a></li>
           </ul>
         </section>
       </main>
@@ -114,18 +119,19 @@
           Санкт-Петербург, набережная <br>
           реки Карповки,5, литера П.
         </address>
-        <ul class="catalog-footer">
-          <li class="catalog-footer-delivery"><a href="#">Доставка</a></li>
-          <li class="catalog-footer-guarantee"><a href="#">Гарантия</a></li>
-          <li class="catalog-footer-contacts"><a href="#">Контакты</a></li>
+        <img src="images/yellow-line.svg" alt="Желтая линия" width="80" height="7">
+        <ul class="catalog-footer-list">
+          <li class="catalog-footer-list-item-li"><a class="catalog-footer-list-item" href="#">Доставка</a></li>
+          <li class="catalog-footer-list-item-li"><a class="catalog-footer-list-item"href="#">Гарантия</a></li>
+          <li class="catalog-footer-list-item-li"><a class="catalog-footer-list-item"href="#">Контакты</a></li>
           </ul>
         <ul class="catalog-footer-pages">
-          <li class="catalog-footer-pages-item"><a href="https://www.facebook.com/htmlacademy"><img src="images/facebool-icon.svg" alt="facebook" width="40" height="40"> </a></li>
-          <li class="catalog-footer-pages-item"><a href="https://www.instagramm.com/htmlacademy"><img src="images/instagramm-icon.svg" alt="instagramm" width="40" height="40"></a></li>
-          <li class="catalog-footer-pages-item"><a href="https://www.twitter.com/htmlacademy"><img src="images/twitter-icon.svg" alt="twitter" width="40" height="40"></a></li>
+          <li class="catalog-footer-pages-item-"><a class="catalog-footer-pages-item"href="https://www.facebook.com/htmlacademy"><img src="images/facebool-icon.svg" alt="facebook" width="40" height="40"> </a></li>
+          <li class="catalog-footer-pages-item-"><a class="catalog-footer-pages-item"href="https://www.instagramm.com/htmlacademy"><img src="images/instagramm-icon.svg" alt="instagramm" width="40" height="40"></a></li>
+          <li class="catalog-footer-pages-item-"><a class="catalog-footer-pages-item"href="https://www.twitter.com/htmlacademy"><img src="images/twitter-icon.svg" alt="twitter" width="40" height="40"></a></li>
         </ul>
         <span class="catalog-footer-phone">
-          <a href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
+          <a class="catalog-footer-phone"href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
         </span>
         <span class="catalog-footer-htmlacademy">
           <a href="https://htmlacademy.com"><img src="images/icon-of-htmlacademy.svg" alt="logo-of-the-academy" width="115" height="33"></a>
